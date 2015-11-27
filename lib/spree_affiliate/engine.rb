@@ -4,7 +4,7 @@ module SpreeAffiliate
     isolate_namespace Spree
     engine_name 'spree_affiliate'
 
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib) # fixed NameError: uninitialized constant SpreeAffiliate::Configuration
 
     # use rspec for tests
     config.generators do |g|
